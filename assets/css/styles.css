@@ -405,6 +405,13 @@ body.dark-theme{
   font-weight: var(--font-semi-bold);
 }
 
+.home__info-number-alt{
+  font-family: var(--title-font);
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  /*font-weight: var(--font-semi-bold);*/
+}
+
 /*=============== SKILLS ===============*/
 .skills__container{
   row-gap: 3.5rem;
