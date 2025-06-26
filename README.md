@@ -13,7 +13,6 @@ This portfolio is built using:
 - **HTML5**
 - **CSS3**
 - **JavaScript (Vanilla)**
-- Dark mode toggle using basic JavaScript and CSS
 
 No frameworks, no libraries – just clean, simple, and lightweight.
 
