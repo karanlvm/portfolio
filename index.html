@@ -1,568 +1,536 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Vasudevamurthy</title>
+  <meta name="description" content="A software engineer working at the seam between machine learning and systems security.">
+  <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon">
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DKVEH91K"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76DKVEH91K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-76DKVEH91K');
+  </script>
 
-        gtag('config', 'G-76DKVEH91K');
-        </script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon">
+  <!-- NAV -->
+  <header class="masthead-nav" id="nav-header">
+    <nav class="container nav">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">KV</span>
+        <span class="nav__brand-rule"></span>
+        <span class="nav__brand-meta">vol. i · mmxxvi</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about"      class="nav__link"><span class="nav__num">i.</span> About</a></li>
+        <li><a href="#work"       class="nav__link"><span class="nav__num">ii.</span> Work</a></li>
+        <li><a href="#experience" class="nav__link"><span class="nav__num">iii.</span> Path</a></li>
+        <li><a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav__link nav__link--cta">Résumé ↗</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
 
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <main id="top">
 
-        <!--=============== FOOTER ICONS ===============-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- =========================================
+         MASTHEAD
+         ========================================= -->
+    <section class="masthead">
+      <div class="container masthead__container">
+        <div class="masthead__meta">
+          <span class="masthead__meta-l">— Karan Vasudevamurthy —</span>
+          <span class="masthead__meta-r" id="masthead-time">·</span>
+        </div>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <h1 class="display-name">
+          <span class="display-name__first">Karan</span>
+          <span class="display-name__last">Vasudevamurthy<span class="display-name__period">.</span></span>
+        </h1>
 
-        
+        <p class="masthead__lede">
+          An engineer working at the seam between
+          <em>machine learning</em> and <em>systems security</em>.
+          Currently building software for the food &amp; beverage supply chain
+          at <a href="https://www.itradenetwork.com/" target="_blank" rel="noopener" class="inline-link">iTradeNetwork</a>.
+        </p>
 
-        <title>Karan Vasudevamurthy</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    Karan Vasudevamurthy
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__itemm">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-line"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-code-line"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-line"></i> Qualifications
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-macbook-line"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="assets/resume.pdf" class="nav__link" download="Karan_V_Resume" target="_blank">
-                                <i class="ri-file-download-line"></i> Resume
-                            </a>
-                        </li>
-                    </ul>
+        <div class="masthead__cta">
+          <a href="#work" class="ed-link ed-link--strong">See selected work <span class="ed-arrow">↘</span></a>
+          <span class="ed-sep">·</span>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener" class="ed-link">Résumé <span class="ed-arrow">↗</span></a>
+          <span class="ed-sep">·</span>
+          <span class="ed-hint">press <kbd>~</kbd> for terminal</span>
+        </div>
 
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close"> 
-                        <i class="ri-close-line"></i>
-                    </div>
+        <hr class="rule rule--bold">
+      </div>
+    </section>
 
-                </div>
+    <!-- =========================================
+         I. ABOUT  +  MARGINALIA
+         ========================================= -->
+    <section class="essay" id="about">
+      <div class="container essay__container">
 
-                <div class="nav__buttons">
-                    <!-- Theme change button -->
-                    <i class="fas fa-moon change-theme" id="theme-button"></i>
+        <div class="essay__main">
+          <div class="section-mark">
+            <span class="section-mark__num">I.</span>
+            <h2 class="section-mark__title">About</h2>
+          </div>
 
-                    <!-- Toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+          <p class="lede">
+            <span class="dropcap">K</span>aran is a software engineer with an M.S. in
+            Computer Science from the <em>University of Texas at Arlington</em>,
+            where he graduated with a 3.83 GPA and spent two years split between
+            information-security coursework and the Cyber Guard Research Lab.
+          </p>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid section__border">
-                    <div class="home__data grid">
-                        <h1 class="home__title">
-                            Hi, I'm Karan <br>
-                            <span class="pronunciation">(read as: kah-rahn)</span><br>
-                            
-                        </h1>
-                        <div class="home__blob grid">
-                            <div class="home__perfil">
-                                <img src="assets/img/karan.jpg" alt="home perfil">
-                            </div>
-                            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
-                        </div>
-                        <ul class="home__social">
-                            <a href="mailto:kvasudevam@gmail.com" class="footer__social-link">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/karanlvm/" target="_blank" class="footer__social-link">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.github.com/karanlvm" target="_blank" class="footer__social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.kaggle.com/karanlvm" target="_blank" class="footer__social-link">
-                                <i class="fab fa-kaggle"></i>
-                            </a>
-                        </ul>
-                    </div>
-                    <!--==================== HOME INFO 1 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                ABOUT ME
-                            </h3>
-                            <p class="home__info-description">
-                            I'm a software engineer with a Master's in Computer Science from the University of Texas at Arlington. My work spans ML, cybersecurity, and full-stack development. I enjoy building things that solve real problems, whether it's improving system security, training models, or writing clean, efficient code.
-                        </p>
-                        </div>
-                    </div>
+          <p>
+            His interests live where two fields fold over each other &mdash; machine
+            learning that has to be trustworthy, and security tooling that has to
+            think. His thesis-adjacent work on <em>BERT vs. LSTMs for sentiment
+            analysis</em> closed at 94.2% accuracy<a href="#fn-1" id="ref-1" class="fn-ref">1</a>
+            and was written up as a paper; his weekend tooling for catching unsafe
+            Python patterns ships as
+            <a href="https://github.com/karanlvm/PyWard" target="_blank" rel="noopener" class="inline-link">PyWard</a>.
+          </p>
 
-                    <!--==================== HOME INFO 2 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                CURRENTLY
-                            </h3>
-                            <p class="home__info-number-alt">
-                                 Research Assistant @ The University of Texas at Arlington
-                            </p>
-                        </div>
+          <blockquote class="pull-quote">
+            The interesting work happens where two fields fold over each other.
+          </blockquote>
 
-                        <div>
-                            <h3 class="home__info-title">
-                                LOOKING FOR
-                            </h3>
-                            <p class="home__info-number-alt">
-                                New grad roles starting May 2025
-                            </p>
-                        </div>
-                        
-                    </div>
+          <p>
+            Now he writes software for the food &amp; beverage supply chain at
+            iTradeNetwork<a href="#fn-2" id="ref-2" class="fn-ref">2</a> &mdash; the
+            unglamorous, load-bearing kind of software that runs in the background of
+            meals you've already eaten. Outside the keyboard, he chases trails
+            (Moab<a href="#fn-3" id="ref-3" class="fn-ref">3</a>, the Grand Canyon, Niagara)
+            and reads more than he probably should.
+          </p>
 
-                </div>
-            </section>
+          <p class="aside">
+            It's pronounced <span class="mono">kah-rahn</span>, by the way.
+          </p>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">
-                    Skills
-                </h2>
-                <span class="section__subtitle">
-                    My top skills
+          <aside class="footnotes" aria-label="Notes">
+            <div class="footnotes__label">Notes</div>
+            <ol class="footnotes__list">
+              <li class="fn" id="fn-1">
+                <span class="fn__num">1</span>
+                <span class="fn__body">
+                  Specifically: BERT-base + linear classifier head, AdamW at
+                  2e-5, 3 epochs on the IMDB binary corpus. The LSTM baseline
+                  topped out at 88.7%. <a href="#ref-1" class="fn-back" aria-label="Back to text">↩</a>
                 </span>
-                <div class="skills__container container grid section__border">
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i> Core Development Skills
-                        </h3>
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets\img\icons8-python-100.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Python
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-c.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    C++
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-react.svg " alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    React
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-tensorflow.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Tensorflow
-                                </h3>
-
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-pandas.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Pandas
-                                </h3>
-
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-opencv.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    OpenCV
-                                </h3>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i> Linux & Ecosystem
-                        </h3>
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-aws.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    AWS
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-docker.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Docker
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-google-firebase-console-120.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Firebase
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/git-icon.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Git
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/postman-icon-svgrepo-com.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Postman
-                                </h3>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/linux-svgrepo-com.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                 Linux
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">
-                    Qualifications
-                </h2>
-                <span class="section__subtitle">
-                    Experience and Education
+              </li>
+              <li class="fn" id="fn-2">
+                <span class="fn__num">2</span>
+                <span class="fn__body">
+                  The food &amp; beverage supply chain runs on more software than
+                  you'd guess &mdash; reservations, traceability, recall handling,
+                  payments between distributors and operators. Boring on the
+                  outside, fascinating once you're in it. <a href="#ref-2" class="fn-back" aria-label="Back to text">↩</a>
                 </span>
-                <div class="qualification__container container grid section__border">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-book-line"></i> Education
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    M.S. (Computer Science)
-                                </h3>
-                                <span class="qualification__country">
-                                    The University of Texas at Arlington
-                                </span>
-                                <span class="qualification__country">
-                                    GPA: 3.83/4.0
-                                </span>
-                                <span class="qualification__year">
-                                    Aug 2023 - May 2025
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    B.E. (Computer Science and Engineering)
-                                </h3>
-                                <span class="qualification__country">
-                                    Dayananda Sagar College of Engineering
-                                </span>
-                                <span class="qualification__country">
-                                    GPA: 3.4/4.0
-                                </span>
-                                <span class="qualification__year">
-                                    Aug 2019 - May 2023
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Experience
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Research Assistant - Cyber Guard Research Lab
-                                </h3>
-                                <span class="qualification__country">
-                                    The University of Texas at Arlington
-                                </span>
-                                <span class="qualification__year">
-                                    Jul 2025 - Current
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    Graduate Teaching Assistant - Information Security
-                                </h3>
-                                <span class="qualification__country">
-                                    The University of Texas at Arlington
-                                </span>
-                                <span class="qualification__year">
-                                    Aug 2024 - May 2025
-                                </span>
-                            </div>
-                                <div>
-                                <h3 class="qualification__name">
-                                    Applied Machine Learning Intern
-                                </h3>
-                                <span class="qualification__country">
-                                    Visteon Corporation - Bangalore
-                                </span>
-                                <span class="qualification__year">
-                                    Sept 2021 - Mar 2022
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-           
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">
-                    Projects
-                </h2>
-                <span class="section__subtitle">
-                    <!--Add subtitle if you want to here-->
+              </li>
+              <li class="fn" id="fn-3">
+                <span class="fn__num">3</span>
+                <span class="fn__body">
+                  Best canyoneering of my life so far. If you go, Pine Creek
+                  is worth the cold water. <a href="#ref-3" class="fn-back" aria-label="Back to text">↩</a>
                 </span>
-                <div class="container section__border">
-                    <div class="projects__container swiper">
-                        <div class="swiper-wrapper">
+              </li>
+            </ol>
+          </aside>
+        </div>
 
-                            <!--==================== PROJECT 1 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project3.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Python, Secure Programming
-                                    </span>
-                                    <h1 class="projects__title">
-                                        PyWard
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/PyWard" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 1 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Operating Systems, C++
-                                    </span>
-                                    <h1 class="projects__title">
-                                        ForgeOS
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/ForgeOS" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project3.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Artificial Intelligence, LLM
-                                    </span>
-                                    <h1 class="projects__title">
-                                        LocalGPT
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/LocalGPT" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <!--==================== PROJECT 2 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Vite, Fullstack
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Musiqi
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/Musiqi" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 3 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project2.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Artificial Intelligence, Machine Learning
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Fake News Detection
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/Fake-News-Detection" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Machine Learning, Transformers, LSTMs
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Sentiment Analysis on IMDB Reviews
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/Sentiment-Analysis-on-IMDB" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                    <a href="https://github.com/karanlvm/Sentiment-Analysis-on-IMDB/blob/main/Machine%20Learning%20Paper.pdfhttps://github.com/karanlvm/Sentiment-Analysis-on-IMDB/blob/main/Machine%20Learning%20Paper.pdf" class="projects__button">
-                                        Paper <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="projects__content swiper-slide">
-                                <img src="assets/img/project2.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        CyberSecurity, CVE
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Dirty Pipe Exploit
-                                    </h1>
-                                    <a href="https://github.com/karanlvm/DirtyPipe-Exploit" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                        <!-- Swiper pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
+        <aside class="margin">
 
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section"></section> -->
-
-            <!--==================== CONTACT ====================-->
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">
-                    Karan Vasudevamurthy
-                </h1>
-                <p>
-                    kvasudevam@gmail.com
-                </p>
-                <ul class="footer__list">
-                    <li>
-                        <a href="personal.html" class="footer__link">More About Me</a>
-                    </li>
-                </ul>
-                <ul class="footer__social">
-                    <a href="mailto:kvasudevam@gmail.com" class="footer__social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/karanlvm/" target="_blank" class="footer__social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.github.com/karanlvm" target="_blank" class="footer__social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.kaggle.com/karanlvm" target="_blank" class="footer__social-link">
-                        <i class="fab fa-kaggle"></i>
-                    </a>
-                </ul>
-                <span class="footer__copy">
-                    &#169; Copyright Karan. All rights reserved.
-                </span>
+          <!-- STATUS -->
+          <div class="margin__block" id="status-block">
+            <div class="margin__label">
+              <span class="dot dot--live"></span> Currently
             </div>
-        </footer>
+            <ul class="margin__list">
+              <li><span class="margin__key">Role</span><span class="margin__val">SWE @ iTradeNetwork</span></li>
+              <li><span class="margin__key">Since</span><span class="margin__val">Apr 2026</span></li>
+              <li><span class="margin__key">Place</span><span class="margin__val">Texas, US</span></li>
+              <li><span class="margin__key">Local</span><span class="margin__val" id="status-time">—</span></li>
+            </ul>
+          </div>
 
+          <!-- SPOTIFY — hidden until creds are wired (see README)
+          <div class="margin__block" id="spotify-tile">
+            <div class="margin__label">
+              <span class="dot" id="spotify-dot"></span>
+              <span id="spotify-state">Loading…</span>
+            </div>
+            <a id="spotify-track" class="spotify__track" target="_blank" rel="noopener">—</a>
+            <div id="spotify-artist" class="spotify__artist">—</div>
+            <div class="spotify__cover-row">
+              <div class="spotify__cover-wrap">
+                <img id="spotify-cover" class="spotify__cover" alt="" loading="lazy">
+              </div>
+              <div class="spotify__bars" id="spotify-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          -->
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+          <!-- GITHUB -->
+          <div class="margin__block" id="github-tile">
+            <div class="margin__label">
+              <span class="margin__sigil">§</span> GitHub
+              <a href="https://github.com/karanlvm" target="_blank" rel="noopener" class="margin__corner" aria-label="GitHub">↗</a>
+            </div>
+            <ul class="margin__list">
+              <li><span class="margin__key">Repos</span><span class="margin__val" id="gh-repos">—</span></li>
+              <li><span class="margin__key">Followers</span><span class="margin__val" id="gh-followers">—</span></li>
+              <li><span class="margin__key">Stars given</span><span class="margin__val" id="gh-stars">—</span></li>
+            </ul>
+            <div class="margin__sublabel">Recent —</div>
+            <ul class="gh-recent" id="gh-recent">
+              <li class="gh-recent__item gh-recent__item--placeholder">loading…</li>
+            </ul>
+          </div>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+          <!-- ON LOOP -->
+          <div class="margin__block">
+            <div class="margin__label"><span class="margin__sigil">§</span> On loop</div>
+            <ul class="margin__list margin__list--loop">
+              <li><span class="margin__key">Reading</span><span class="margin__val"><em>Designing Data-Intensive Apps</em></span></li>
+              <li><span class="margin__key">Trail</span><span class="margin__val">Moab, UT</span></li>
+              <li><span class="margin__key">Building</span><span class="margin__val">small ML side-quests</span></li>
+            </ul>
+          </div>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== EMAIL JS ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        </aside>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+      </div>
+    </section>
+
+    <hr class="rule rule--ornament" data-ornament="✦">
+
+    <!-- =========================================
+         II. SELECTED WORK
+         ========================================= -->
+    <section class="essay essay--narrow" id="work">
+      <div class="container">
+
+        <div class="section-mark">
+          <span class="section-mark__num">II.</span>
+          <h2 class="section-mark__title">Selected Work</h2>
+          <a href="https://github.com/karanlvm" target="_blank" rel="noopener" class="section-mark__more">All on GitHub ↗</a>
+        </div>
+
+        <p class="section-intro">
+          A handful of projects that span the things I find interesting &mdash;
+          security tooling, systems programming, language models, and the
+          occasional full-stack experiment.
+        </p>
+
+        <ol class="works">
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">01</span>
+              <h3 class="work__title">PyWard</h3>
+              <span class="work__year">2025</span>
+            </div>
+            <p class="work__kicker">A security-aware linter for Python.</p>
+            <div class="work__specimen spec--advisory">
+              <div class="spec__row"><span class="spec__key">Advisory</span><span class="spec__val">PYWARD-2025-0042</span></div>
+              <div class="spec__row"><span class="spec__key">Severity</span><span class="spec__val"><span class="spec-bar">▰▰▰▰▱</span> HIGH</span></div>
+              <div class="spec__row"><span class="spec__key">Issue</span><span class="spec__val"><code>pickle.loads()</code> on untrusted input</span></div>
+              <div class="spec__row"><span class="spec__key">Location</span><span class="spec__val spec-dim">app/auth.py:127</span></div>
+            </div>
+            <p class="work__desc">
+              Static-analysis tool that catches unsafe patterns &mdash; unsafe deserialization,
+              shell-injection-prone subprocess calls, weak crypto, the usual cast &mdash;
+              before they make it past code review. AST-based, fast enough for pre-commit.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">Python</span><span class="tag">Security</span><span class="tag">Static Analysis</span></span>
+              <a href="https://github.com/karanlvm/PyWard" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">02</span>
+              <h3 class="work__title">ForgeOS</h3>
+              <span class="work__year">2024</span>
+            </div>
+            <p class="work__kicker">A small operating system, written by hand.</p>
+            <div class="work__specimen spec--boot">
+              <div class="spec__line"><span class="spec-ts">[    0.000023]</span> forge: boot sequence start</div>
+              <div class="spec__line"><span class="spec-ts">[    0.001847]</span> forge: memory map · <span class="spec-ok">2048 MiB</span> available</div>
+              <div class="spec__line"><span class="spec-ts">[    0.003290]</span> forge: scheduler online (cooperative)</div>
+              <div class="spec__line"><span class="spec-ts">[    0.005821]</span> forge: ready · idle pid <span class="spec-ok">1</span> <span class="spec-dim">_</span></div>
+            </div>
+            <p class="work__desc">
+              A from-scratch OS kernel in C++ &mdash; bootloader through interrupt handling,
+              memory management, a cooperative scheduler, and a paper-thin syscall layer.
+              Built for the joy of it. Mostly works. Sometimes panics.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">C++</span><span class="tag">OS</span><span class="tag">Systems</span></span>
+              <a href="https://github.com/karanlvm/ForgeOS" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">03</span>
+              <h3 class="work__title">LocalGPT</h3>
+              <span class="work__year">2024</span>
+            </div>
+            <p class="work__kicker">Open-weight LLM inference on your own machine.</p>
+            <div class="work__specimen spec--chat">
+              <div class="chat-msg"><span class="chat-who chat-who--you">you →</span> <span class="chat-text">summarize chapter 7 in two sentences.</span></div>
+              <div class="chat-msg"><span class="chat-who chat-who--bot">gpt →</span> <span class="chat-text">the author argues causal inference requires intervention, not correlation. controlled experiments beat observational data when feasible.</span></div>
+              <div class="chat-cite">retrieved from <em>chapter_07.pdf</em>, p. 142 · 0% cloud</div>
+            </div>
+            <p class="work__desc">
+              Privacy-first language model inference &mdash; bring your own GGUF, point it at
+              a folder of documents, get a small chat UI. Nothing leaves the machine.
+              Built mostly because cloud LLMs felt wrong for personal notes.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">RAG</span></span>
+              <a href="https://github.com/karanlvm/LocalGPT" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">04</span>
+              <h3 class="work__title">Sentiment Analysis</h3>
+              <span class="work__year">2023</span>
+            </div>
+            <p class="work__kicker">BERT vs. LSTMs on the IMDB corpus — a paper.</p>
+            <div class="work__specimen spec--paper">
+              <div class="spec__row"><span class="spec__key">Abstract</span><span class="spec__val">Fine-tuned BERT compared against bidirectional LSTM baselines on the IMDB binary corpus.</span></div>
+              <div class="spec__row"><span class="spec__key">Methods</span><span class="spec__val">BERT-base, AdamW @ 2e-5, 3 epochs. LSTM with GloVe embeddings.</span></div>
+              <div class="spec__row"><span class="spec__key">Results</span><span class="spec__val">BERT <span class="spec-num">94.2%</span> &nbsp; LSTM <span class="spec-num spec-dim">88.7%</span></span></div>
+            </div>
+            <p class="work__desc">
+              A comparison study of fine-tuned BERT against bidirectional LSTM
+              baselines on the IMDB review dataset. Final accuracy of 94.2%, written
+              up as a paper covering the architecture trade-offs and where each
+              approach falls over.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">BERT</span><span class="tag">LSTM</span><span class="tag">Research</span></span>
+              <a href="https://github.com/karanlvm/Sentiment-Analysis-on-IMDB" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">05</span>
+              <h3 class="work__title">Dirty Pipe</h3>
+              <span class="work__year">2023</span>
+            </div>
+            <p class="work__kicker">A careful read of CVE-2022-0847.</p>
+            <div class="work__specimen spec--cve">
+              <div class="spec__row"><span class="spec__key">CVE</span><span class="spec__val">CVE-2022-0847 &nbsp;&nbsp;<span class="spec-cvss">CVSS 7.8 · HIGH</span></span></div>
+              <div class="spec__row"><span class="spec__key">Affects</span><span class="spec__val">Linux kernel 5.8 – 5.16.10</span></div>
+              <div class="spec__row"><span class="spec__key">Root</span><span class="spec__val">missing flag init in <code>copy_page_to_iter_pipe</code></span></div>
+              <div class="spec__row"><span class="spec__key">Patched</span><span class="spec__val spec-dim">5.16.11 / 5.15.25 / 5.10.102</span></div>
+            </div>
+            <p class="work__desc">
+              An educational walkthrough of the Linux kernel privilege-escalation
+              vulnerability &mdash; how the page cache, pipe buffers, and a missing flag
+              initialization conspired to make every file on the system suddenly
+              writable. Includes a sandboxed PoC and notes on mitigations.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">C</span><span class="tag">Linux</span><span class="tag">CVE</span></span>
+              <a href="https://github.com/karanlvm/DirtyPipe-Exploit" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+          <li class="work">
+            <div class="work__head">
+              <span class="work__num">06</span>
+              <h3 class="work__title">Musiqi</h3>
+              <span class="work__year">2022</span>
+            </div>
+            <p class="work__kicker">A small music streaming app.</p>
+            <div class="work__specimen spec--queue">
+              <div class="spec-queue-label">↻ now playing &middot; user queue</div>
+              <div class="queue-track queue-track--playing"><span class="queue-num">01</span><span class="queue-title">Midnight City</span><span class="queue-dur">3:42</span></div>
+              <div class="queue-track"><span class="queue-num">02</span><span class="queue-title">Fluorescent Adolescent</span><span class="queue-dur">2:57</span></div>
+              <div class="queue-track"><span class="queue-num">03</span><span class="queue-title spec-dim">…</span><span class="queue-dur spec-dim">—:—</span></div>
+            </div>
+            <p class="work__desc">
+              A full-stack experiment &mdash; Vite, React, audio playback, playlists.
+              Nothing groundbreaking; it was an excuse to actually finish something
+              full-stack and care about how it felt to use.
+            </p>
+            <div class="work__meta">
+              <span class="work__tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Full Stack</span></span>
+              <a href="https://github.com/karanlvm/Musiqi" target="_blank" rel="noopener" class="work__link">Source <span class="ed-arrow">↗</span></a>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <hr class="rule rule--ornament" data-ornament="§">
+
+    <!-- =========================================
+         III. THE PATH
+         ========================================= -->
+    <section class="essay essay--narrow" id="experience">
+      <div class="container">
+
+        <div class="section-mark">
+          <span class="section-mark__num">III.</span>
+          <h2 class="section-mark__title">The Path So Far</h2>
+        </div>
+
+        <p class="section-intro">
+          Roles and degrees, in reverse chronology.
+        </p>
+
+        <table class="cv">
+          <tbody>
+            <tr class="cv__row cv__row--current">
+              <td class="cv__date">Apr 2026 &mdash;</td>
+              <td class="cv__role">
+                <span class="cv__role-name">Software Engineer</span>
+                <span class="cv__role-note">Building for the food &amp; beverage supply chain.</span>
+              </td>
+              <td class="cv__org">iTradeNetwork, Inc.</td>
+            </tr>
+            <tr class="cv__row">
+              <td class="cv__date">2025 &ndash; 2026</td>
+              <td class="cv__role">
+                <span class="cv__role-name">Research Assistant</span>
+                <span class="cv__role-note">Systems-level vulnerability &amp; exploit analysis.</span>
+              </td>
+              <td class="cv__org">Cyber Guard Lab · UT Arlington</td>
+            </tr>
+            <tr class="cv__row">
+              <td class="cv__date">2024 &ndash; 2025</td>
+              <td class="cv__role">
+                <span class="cv__role-name">Graduate Teaching Assistant</span>
+                <span class="cv__role-note">Information Security. Led labs &amp; coursework.</span>
+              </td>
+              <td class="cv__org">UT Arlington</td>
+            </tr>
+            <tr class="cv__row cv__row--edu">
+              <td class="cv__date">2023 &ndash; 2025</td>
+              <td class="cv__role">
+                <span class="cv__role-name"><em>M.S. Computer Science</em></span>
+                <span class="cv__role-note">GPA 3.83 / 4.0 · Focus: ML, security, systems.</span>
+              </td>
+              <td class="cv__org">UT Arlington</td>
+            </tr>
+            <tr class="cv__row">
+              <td class="cv__date">2021 &ndash; 2022</td>
+              <td class="cv__role">
+                <span class="cv__role-name">Applied ML Intern</span>
+                <span class="cv__role-note">ML for automotive embedded systems.</span>
+              </td>
+              <td class="cv__org">Visteon · Bangalore</td>
+            </tr>
+            <tr class="cv__row cv__row--edu">
+              <td class="cv__date">2019 &ndash; 2023</td>
+              <td class="cv__role">
+                <span class="cv__role-name"><em>B.E. Computer Science &amp; Engineering</em></span>
+                <span class="cv__role-note">GPA 3.4 / 4.0</span>
+              </td>
+              <td class="cv__org">Dayananda Sagar College of Engineering</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================
+       COLOPHON
+       ========================================= -->
+  <footer class="colophon">
+    <div class="container">
+      <hr class="rule rule--bold">
+      <div class="colophon__grid">
+
+        <div class="colophon__block">
+          <div class="colophon__label">Set in</div>
+          <p class="colophon__text">
+            <em>Fraunces</em> &amp; <span class="mono">JetBrains Mono</span>.
+            Written in plain HTML, CSS, &amp; vanilla JavaScript.
+            <a href="https://github.com/karanlvm/portfolio" target="_blank" rel="noopener" class="inline-link">Source</a>.
+          </p>
+        </div>
+
+        <div class="colophon__block">
+          <div class="colophon__label">Reach</div>
+          <ul class="colophon__links">
+            <li><a href="mailto:kvasudevam@gmail.com">kvasudevam@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/karanlvm/" target="_blank" rel="noopener">linkedin / karanlvm</a></li>
+            <li><a href="https://github.com/karanlvm" target="_blank" rel="noopener">github / karanlvm</a></li>
+            <li><a href="https://open.spotify.com/user/karanlvm" target="_blank" rel="noopener">spotify / karanlvm</a></li>
+          </ul>
+        </div>
+
+        <div class="colophon__block">
+          <div class="colophon__label">Notes</div>
+          <p class="colophon__text">
+            Press <kbd>~</kbd> anywhere for a terminal.
+            <button class="inline-link inline-link--btn" id="nav-term-btn">Open it</button>.
+            Updated <span id="footer-year"></span>.
+          </p>
+        </div>
+
+      </div>
+      <div class="colophon__sig">
+        — Karan Vasudevamurthy, <span class="mono">MMXXVI</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="scroll-top" id="scroll-top" aria-label="Back to top">↑</a>
+
+  <!-- TERMINAL OVERLAY -->
+  <div class="terminal" id="terminal" hidden aria-hidden="true">
+    <div class="terminal__win" role="dialog" aria-label="Terminal">
+      <div class="terminal__bar">
+        <div class="terminal__dots">
+          <button class="dot dot--r" id="term-close" aria-label="Close"></button>
+          <span class="dot dot--y"></span>
+          <span class="dot dot--g"></span>
+        </div>
+        <span class="terminal__title">karan@portfolio: ~</span>
+      </div>
+      <div class="terminal__body" id="terminal-body">
+        <div class="terminal__out" id="terminal-out"></div>
+        <div class="terminal__line">
+          <span class="terminal__prompt">karan@portfolio:~$</span>
+          <input id="terminal-input" class="terminal__input" type="text" autocomplete="off" spellcheck="false" autocapitalize="off">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
