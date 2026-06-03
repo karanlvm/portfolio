@@ -33,7 +33,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--serif);
   font-variation-settings: "opsz" 14, "SOFT" 30;
@@ -1151,9 +1151,14 @@ kbd {
   body { font-size: 16px; }
   .container { padding: 0 1.25rem; }
   .masthead { padding: 7rem 0 3rem; }
-  .masthead__meta { font-size: 0.66rem; margin-bottom: 1.75rem; }
+  .masthead__meta {
+    font-size: 0.66rem;
+    margin-bottom: 1.75rem;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+  }
 
-  .display-name { font-size: 4.2rem; }
+  .display-name { font-size: clamp(2.4rem, 10.5vw, 4.2rem); }
 
   .masthead__lede { font-size: 1.1rem; }
   .ed-sep, .ed-hint { display: none; }
@@ -1176,10 +1181,12 @@ kbd {
   .work__title { font-size: 1.5rem; }
 
   /* CV: stack */
+  .cv, .cv tbody { display: block; width: 100%; }
   .cv__row { display: block; padding: 1.25rem 0; }
   .cv__row td { display: block; padding: 0.1rem 0 !important; }
   .cv__date { width: auto; }
-  .cv__org  { text-align: left; margin-top: 0.4rem; }
+  .cv__org  { text-align: left; margin-top: 0.4rem; white-space: normal; word-break: break-word; }
+  .cv__role-note { max-width: 100%; }
 
   .colophon__grid { grid-template-columns: 1fr; gap: 1.75rem; }
 
@@ -1202,4 +1209,10 @@ kbd {
   .nav__link--cta { display: none; }
 
   .rule--ornament { margin: 2.5rem 0; }
+
+  /* prevent overflow on any remaining wide elements */
+  .work__specimen, .spec__row, .chat-msg, .spec__line {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 }
